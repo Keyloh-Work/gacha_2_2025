@@ -186,6 +186,8 @@ class GachaButtonView(discord.ui.View):
             return "✨ 🌟 SR 🌟 ✨"
         elif rarity == "SSR":
             return "🎉✨✨👑 SSR 👑✨✨🎉"
+        elif rarity == "UR":
+            return "🎇✨✨🌟💎 UR 💎🌟✨✨🎇"
         return rarity
 
     async def get_random_url(self, user_id):
