@@ -34,7 +34,7 @@ scheduler = AsyncIOScheduler(timezone=JST)
 # ユーザーデータ
 bot.user_points = {}      # {user_id: int} ユーザーポイント
 bot.user_cards = {}       # {user_id: [card_no, ...]} ユーザーが取得したカード
-bot.daily_auto_points = 1 # 毎日00:00に自動付与されるポイント数(初期値1)
+bot.daily_auto_points = 3 # 毎日00:00に自動付与されるポイント数(初期値1)
 bot.last_gacha_usage = {} # クールダウン管理用
 
 def ensure_user_points(user_id):
